@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Explorer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div class="navbar">
+    <a href="home" class="logo">
+      <i class="fas fa-mountain logo-icon"></i>
+      Travel<span>Explorer</span>
+    </a>
+    
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#destinations" class="cta-button-primary">Book Now</a></li>
+    </ul>
+    
+    <div class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content" id="home">
+    <h1>Discover Your Next Adventure</h1>
+    <p>Explore the world's most beautiful places with us.</p>
+    <div class="search-box">
+      <input type="text" id="destinationSearch" class="search-input" placeholder="Search destinations..." />
+      <button class="btn" id="searchBtn">Search</button>
+    </div>
+    <div id="searchResults" class="search-results"></div>
+  </div>
+</section>
+
+  <!-- Popular Destinations -->
+  <section class="destinations" id="destinations">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular Destinations</h2>
+        <p>Explore our top destinations around the world.</p>
+      </div>
+      <div class="destination-grid">
+        <div class="destination-card" id="paris">
+          <img src="assets/img/destination1.jpg" alt="Paris" />
+          <div class="card-content">
+            <h3>Paris, France</h3>
+            <p>The city of lights and love with iconic eiffel tower.</p>
+            <div class="price">$1,200</div>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+        <div class="destination-card" id="bali">
+          <img src="assets/img/destination2.jpg" alt="Bali" />
+          <div class="card-content">
+            <h3>Bali, Indonesia</h3>
+            <p>Tropical paradise with stunning beaches.</p>
+            <div class="price">$900</div>
+            <div class="rating">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="destination-card" id="tokyo">
+          <img src="assets/img/destination3.jpg" alt="Tokyo" />
+          <div class="card-content">
+            <h3>Tokyo, Japan</h3>
+            <p>Vibrant metropolis blending tradition and modernity</p>
+            <div class="price">$1000</div>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+
+        <div class="destination-card" id="alps">
+          <img src="assets/img/destination5.jpg" alt="Alps" />
+          <div class="card-content">
+            <h3>Alps,Switzerland</h3>
+            <p>Alpine wonderland of chocolate, cheese, and breathtaking landscapes.</p>
+            <div class="price">$2000</div>
+            <div class="rating">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="destination-card" id="bangkok">
+          <img src="assets/img/destination4.jpg" alt="Bangkok" />
+          <div class="card-content">
+            <h3>Bangkok, Thailand</h3>
+            <p>A sensory overload of temples, street food, and floating markets.</p>
+            <div class="price">$890</div>
+            <div class="rating">★★★★☆</div>
+          </div>
+        </div>
+
+        <div class="destination-card" id="barcelona">
+          <img src="assets/img/destination6.jpg" alt="Barcelona" />
+          <div class="card-content">
+            <h3>Barcelona, Spain</h3>
+            <p>A vibrant city where Gothic architecture meets beachside bliss.</p>
+            <div class="price">$1700</div>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+        <!-- Add more destination cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Packages -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Packages</h2>
+        <p>Choose from our specially curated travel packages.</p>
+      </div>
+      <div class="package-grid">
+        <div class="package-card">
+          <img src="assets/img/package1.jpg" alt="Mountain Adventure" />
+          <div class="package-info">
+            <h3>Mountain Adventure</h3>
+            <div class="package-meta">
+              <span>7 Days</span>
+              <span>$2,500</span>
+            </div>
+            <p>Experience the thrill of mountain hiking and breathtaking views.</p>
+          </div>
+        </div>
+        <div class="package-card">
+          <img src="assets/img/package2.jpg" alt="Beach Getaway" />
+          <div class="package-info">
+            <h3>Beach Getaway</h3>
+            <div class="package-meta">
+              <span>5 Days</span>
+              <span>$3,500</span>
+            </div>
+            <p>Relax on pristine beaches and enjoy the tropical sun.</p>
+          </div>
+        </div>
+
+        <div class="package-card">
+          <img src="assets/img/package3.jpg" alt="City Escapade" />
+          <div class="package-info">
+            <h3>City Escapade</h3>
+            <div class="package-meta">
+              <span>3 Days</span>
+              <span>$1,000</span>
+            </div>
+            <p>Enjoy the city lights, crowd, modernization and huge buildings.</p>
+          </div>
+        </div>
+        <!-- Add more package cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Clients Say</h2>
+        <p>Hear from our satisfied travelers.</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"An unforgettable experience! Everything was perfectly organized."</p>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client Photo" />
+            </div>
+            <div class="author-info">
+              <h4>Jane Doe</h4>
+              <p>Traveler</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Highly recommend TravelExplorer for their excellent service."</p>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client Photo" />
+            </div>
+            <div class="author-info">
+              <h4>John Smith</h4>
+              <p>Adventurer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Very nice, helped me a lot in my recent adventure thanks."</p>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Client Photo" />
+            </div>
+            <div class="author-info">
+              <h4>John Smith</h4>
+              <p>Adventurer</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more testimonial cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" id="contact">
+    <div class="container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="Enter your email" required />
+        <button class="btn btn-secondary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>TravelExplorer is your trusted partner in discovering the world's most beautiful destinations.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#newsletter">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <!-- Add more social icons as needed -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copyright">
+        &copy; 2025 TravelExplorer. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
